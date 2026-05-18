@@ -27,7 +27,7 @@ public class EmpresaController {
 
     @GetMapping("/prueba-feign/{id}")
     public String probarComunicacion(@PathVariable("id") Long id) {
-        // Usamos "service" porque así nombraste tu variable en la línea 16
+       
         service.buscarDatosDeUnPostulante(id); 
         return "¡Llamada realizada! Revisa la consola negra de VS Code para ver los datos.";
     }
